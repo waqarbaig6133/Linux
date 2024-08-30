@@ -1,0 +1,2 @@
+//Usually, something like GLXGEARS will utilize the integrated graphics card instead of the discrete GC.
+DRI_PRIME = 1 glxgears
