@@ -1,0 +1,10 @@
+install bluez bluez-utils
+so lsmod | grep btusb to ensure that it is in there, or just do modprobe btsb to put it in 
+do systemctl enable bluetooth.service, but start beforte enabling it
+bluetoothctl
+power on
+agent on
+default-agent
+scan on and connect to anything by ciopoying their device code
+
+On seperate terminal, etner sudo /etc/bluetooth/.conf and change the enable the autoenable
