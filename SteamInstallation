@@ -1,0 +1,8 @@
+usually do sudo pacman -S steam, but it likely won't work because multilib isn't enabled
+
+sudo nano /etc/pacman.conf
+[multilib] //uncomment
+Include = /etc/pacman.d/mirrorlist //uncomment
+
+sudo pacman -Sy
+sudo pacman -S steam
