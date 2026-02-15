@@ -1,0 +1,32 @@
+# Make a config directory for picom and add the following
+
+# Backend
+backend = "glx";
+v-sync = true;
+
+# Opacity
+active-opacity = 1.0;
+inactive-opacity = 0.9;
+frame-opacity = 1.0;
+
+# Blur Settings (The New Way)
+blur: {
+  method = "dual_kawase";
+  strength = 7;
+  background = true;
+  background-frame = false;
+  background-fixed = false;
+}
+
+# Fixed Exclude Syntax (Removed the ':c')
+blur-background-exclude = [
+  "window_type = 'dock'",
+  "window_type = 'desktop'",
+  "_GTK_FRAME_EXTENTS"
+];
+
+# Performance tweaks for modern Picom
+use-damage = true;
+log-level = "warn";
+
+#Killall picom, then picom -b
