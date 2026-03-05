@@ -1,0 +1,4 @@
+cd yay
+rm -rf pkg/ src/ *.tar.zst
+sudo pacman -Syu
+makepkg -si
